@@ -1,4 +1,4 @@
-package org.ngforum.constante
+package org.ngforum.constant
 
 import androidx.compose.foundation.Image
 import androidx.compose.runtime.Composable
