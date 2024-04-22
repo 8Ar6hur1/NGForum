@@ -50,9 +50,11 @@ android {
 }
 
 dependencies {
+
     // Compose
     implementation(libs.coil.compose)
     implementation(libs.coil.svg)
+    implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.navigation.compose)
 
     // Default
