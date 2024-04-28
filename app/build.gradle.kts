@@ -55,7 +55,6 @@ dependencies {
     implementation(libs.coil.compose)
     implementation(libs.coil.svg)
     implementation(libs.androidx.navigation.compose)
-    implementation(libs.androidx.navigation.compose)
 
     // Default
     implementation(libs.androidx.core.ktx)
