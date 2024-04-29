@@ -1,4 +1,4 @@
-package org.ngforum.constant
+package org.ngforum.constant.`fun`
 
 import androidx.compose.foundation.Image
 import androidx.compose.runtime.Composable
@@ -15,7 +15,6 @@ fun SvgImageFromDrawable(drawableResId: Int, contentDescription: String) {
             }).build()
     )
     Image(
-        painter = painter,
-        contentDescription = contentDescription
+        painter = painter, contentDescription = contentDescription
     )
 }
