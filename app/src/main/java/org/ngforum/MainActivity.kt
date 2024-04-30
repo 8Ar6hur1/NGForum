@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
                         SplashScreen(navController = navController)
                     }
                     composable("login") {
-                        LoginScreen(navController = navController)
+                        LoginScreen(/*navController = navController*/)
                     }
                     composable("registration") {
                         RegistrationScreen(navController = navController)
