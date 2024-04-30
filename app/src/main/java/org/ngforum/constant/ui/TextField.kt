@@ -1,6 +1,5 @@
 package org.ngforum.constant.ui
 
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -11,21 +10,21 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import org.ngforum.R
 
+@Preview(showBackground = true)
 @Composable
 fun LoginTextField() {
     var text by remember { mutableStateOf("") }
 
     TextField(
-        modifier = Modifier.padding(top = 140.dp),
         value = text,
         onValueChange = { newText ->
             text = newText
@@ -36,13 +35,13 @@ fun LoginTextField() {
     )
 }
 
+@Preview(showBackground = true)
 @Composable
 fun PasswordTextField() {
     var password by remember { mutableStateOf("") }
     var passwordVisible by remember { mutableStateOf(false) }
 
     TextField(
-        modifier = Modifier.padding(top = 28.dp),
         value = password,
         onValueChange = { newPassword ->
             password = newPassword
